@@ -1,15 +1,15 @@
-<!doctype html>
-<html lang="en-GB">
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="./icons/circle.svg" />
+	<link rel="stylesheet" href="./styles.css" />
+	<link rel="manifest" href="./matchtrackerManifest.json" />
     <title>Match Tracker</title>
-    <link rel="stylesheet" href="style.css" />
-	<link rel="manifest" href="matchtrackerManifest.json" />
-	<link rel="icon" href="icons/circle.svg" />
   </head>
   <body>
-    <h1>Match tracker</h1>
+    <h2>MatchTrackerApp</h2>
     <form id="new-match">
       <fieldset>
         <legend>Enter Match Availability start and end dates</legend>
@@ -27,18 +27,17 @@
       </p>
     </form>
     <section id="past-matches">
-	  <!--
-	  <h2>Past availability</h2>
-	  <ul>
-		<li>From 01/01/2024 to 01/06/2024</li>
-		<li>From 01/29/2024 to 02/04/2024</li>
-	  </ul>
-	  -->
+	  
 	</section>
-    <script src="app.js" defer></script>
+    <!--script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js', { scope: './' });
+      }
+    </script-->
+	<script src="./app.js" defer></script>
 	<script>
 		if ("serviceWorker" in navigator) {
-	  navigator.serviceWorker.register("sw.js").then(
+	  navigator.serviceWorker.register("./sw.js",{scope: './'}).then(
 		(registration) => {
 		  console.log("Service worker registration successful:", registration);
 		},

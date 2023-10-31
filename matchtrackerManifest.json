@@ -1,8 +1,13 @@
 {
-  "name" : "Match Tracker",
+  "lang": "en-US",
+  "name" : "Match Tracker v2",
   "short_name": "MT",
   "description" : "Track Bowls match availability dates",
-  "start_url" : "/",
+  "start_url" : "./",
+  "orientation": "any",
+  "theme_color": "#eeffee",
+  "background_color": "#eeffee",
+  "display": "standalone",
   "icons": [
     {
       "src": "icons/circle.ico",
@@ -22,11 +27,8 @@
       "sizes": "512x512"
     },
     {
-      "src": "icons/scalable.svg",
+      "src": "icons/scaleable.svg",
       "sizes": "any"
     }
-  ],
-  "theme_color": "#eeffee",
-  "background_color": "#eeffee",
-  "display": "standalone"
+  ] 
 }
